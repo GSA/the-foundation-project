@@ -6,7 +6,17 @@
 {% include head.html %}
 
 <body>
-  {{ content }}
+
+  <div class="paper">
+
+    {% include gov-banner.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </div>
+
   <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 layout: default
 ---
 
-<div class="padding-2">
-  <p class="font-sans-3xl">hi.</p>
+<div class="grid-container grid-container-desktop-lg">
+  <div class="grid-row">
+    <div class="grid-col-12">
+      {% include component-footer.html %}
+    </div>
+  </div>
 </div>

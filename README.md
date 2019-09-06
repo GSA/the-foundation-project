@@ -1,5 +1,5 @@
-# uswds-sandbox
-Jekyll site for testing new functionality currently under development
+# IDEA Foundations - Footer
+
 
 ## Running code locally
 After cloning the repo, navigate to the correct folder and install USWDS, Jekyll, and any necessary dependencies using:
@@ -16,5 +16,5 @@ USWDS assets are in `assets/uswds/fonts` and `assets/uswds/img`.
 
 SASS files are kept in the `/_sass` directory. To watch for changes and recompile the styles, run:
 ```
-npm run watch
+npm run serve watch
 ```
