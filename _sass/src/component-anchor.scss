@@ -1,7 +1,8 @@
-#component-anchor{
+.component-anchor{
   @include u-padding-y(3);
   @include u-bg('blue-warm-90');
   @include u-text('white');
+
   h3{
     @include u-font('sans', 'md');
   }
@@ -66,19 +67,30 @@
     }
   }
 
-  button{
+  button.btn-learn-more{
     @include u-margin(0);
+    @include u-padding-y('105');
+    @include u-padding-left(2);
+    @include u-padding-right(6);
     @include u-float('right');
     @include u-text('white');
     @include u-border('white');
+    @include u-radius('md');
     @include u-display('flex');
     @include u-flex('align-center');
+    background: none;
+  }
+  .usa-accordion__button[aria-expanded=false]{
+    background-image: url('../img/angle-arrow-down-hover.svg'),-webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent));
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: 7.4em center;
   }
 
 }
 
 
-#component-anchor-support{
+.component-anchor-support{
   @include u-padding-y(1);
   @include u-bg('black');
   @include u-text('white');
@@ -87,9 +99,6 @@
     @include u-line-height('sans', 2);
     a{
       @include u-text('white');
-      // forcing links in the org text to not wrap
-      @include u-text('no-wrap');
-      @include u-overflow('hidden');
     }
     .usa-button-sm{
       @include u-bg('blue-40v');
