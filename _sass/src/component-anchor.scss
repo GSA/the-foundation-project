@@ -112,6 +112,9 @@
     a{
       @include u-text('white');
     }
+    i{
+      @include u-margin-right('05');
+    }
     .usa-button-sm{
       @include u-bg('blue-40v');
       &:hover{
