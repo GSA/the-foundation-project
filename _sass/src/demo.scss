@@ -1,5 +1,9 @@
 .demo{
-  @include u-margin-y(8);
-  @include u-padding-y(8);
-  @include u-bg('gray-warm-30');
+  @include u-margin-y(1);
+  @include u-padding-top(8);
+  @include u-padding-bottom(9);
+  @include u-bg('gray-warm-20');
+  h2{
+    @include u-margin-top(0);
+  }
 }
