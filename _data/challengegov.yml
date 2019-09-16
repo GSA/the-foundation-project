@@ -5,7 +5,7 @@ anchor_data:
     site_about: https://digital.gov/about
     agency: The General Services Administration
     agency_acronym: GSA
-    agency_logo: /img/gsa-logo.png
+    agency_logo: /assets/img/gsa-logo.png
     agency_url: https://gsa.gov
     agency_about: https://gsa.gov/about
     org_primary: Technology Transformation Services
