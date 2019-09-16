@@ -27,9 +27,10 @@
         <div class="grid-row grid-gap-2">
           <div class="grid-col-12 tablet:grid-col-6">
             <div class="org-copy">
-              <p>As part of <a href="#" title="">GSA’s Technology Transformation Services</a> (TTS), we apply modern methodologies and technologies to improve the public’s experience with government. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions. <a class="more" href="#" title=""><span>Read more</span>&nbsp;»</a></p>
-
-              <p>The Office of Products and Programs (OPP) is a portfolio of products and services that help agencies improve delivery of information and services to the public. <a class="more" href="#" title=""><span>Read more</span>&nbsp;»</a></p>
+              <p>{{ org.org_primary_bio }} <a class="more" href="{{ org.org_primary_url }}" title="Learn more about {{ org.org_primary }}"><span>Read more</span>&nbsp;»</a></p>
+              {% if org.org_secondary_bio %}
+              <p>{{ org.org_secondary_bio }} <a class="more" href="{{ org.org_secondary_url }}" title="Learn more about {{ org.org_secondary }}"><span>Read more</span>&nbsp;»</a></p>
+              {% endif %}
             </div>
           </div>
           <div class="grid-col-12 tablet:grid-col-5 tablet:grid-offset-1">
