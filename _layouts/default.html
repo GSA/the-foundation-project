@@ -11,18 +11,35 @@
 
     {% include gov-banner.html %}
 
-    <div class="grid-container grid-container-desktop-lg">
-      <div class="grid-row">
-        <div class="grid-col-12">
-          {{ content }}
+    <section class="demo">
+      <div class="grid-container grid-container-desktop-lg">
+        <div class="grid-row">
+          <div class="grid-col-12">
+            {% include component-footer.html %}
+            {% include component-anchor.html name="foooooo" %}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="component">
+      <div class="grid-container grid-container-desktop">
+        <div class="grid-row">
+          <div class="grid-col-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
 
     {% include footer.html %}
 
   </div>
-
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="{{ "/assets/uswds/js/uswds.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/custom.js" | relative_url }}"></script>
 </body>
 </html>

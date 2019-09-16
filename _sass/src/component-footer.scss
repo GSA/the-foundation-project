@@ -1,4 +1,5 @@
 #component-footer{
+  @include u-display('none');
   h4{
     @include u-font('sans', 'md');
   }
