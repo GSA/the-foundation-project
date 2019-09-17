@@ -1,0 +1,23 @@
+{% for org in site.data.anchors.[include.name].anchor_data %}
+
+<div class="usa-accordion usa-accordion-data">
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion__heading">
+    <button class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="data-{{ include.name }}">
+      Anchor Data
+    </button>
+  </h2>
+  <div id="data-{{ include.name }}" class="usa-accordion__content usa-prose">
+    <div class="code">
+      {% for item in org %}
+        <p><strong>{{item[0]}}:</strong> {{item[1]}}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% endfor %}

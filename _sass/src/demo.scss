@@ -1,9 +1,27 @@
 .demo{
-  @include u-margin-y(1);
-  @include u-padding-top(8);
-  @include u-padding-bottom(9);
-  @include u-bg('gray-warm-20');
+  @include u-margin-y(3);
+  @include u-padding-x(3);
+  @include u-padding-y(5);
+  @include u-bg('gray-warm-10');
   h2{
     @include u-margin-top(0);
+  }
+}
+
+.usa-accordion-data{
+  @include u-margin-top(4);
+  button{
+    @include u-bg('mint-20');
+    &:hover{
+      @include u-bg('mint-30');
+    }
+  }
+  .code{
+    @include u-font('mono', 'md');
+    // @include u-measure(4);
+    p{
+      @include u-margin-top(0);
+      @include u-margin-bottom('05');
+    }
   }
 }

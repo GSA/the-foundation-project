@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<main class="usa-layout-docs usa-section" id="main-content">
+  <div class="grid-container grid-container-desktop">
+    <div class="grid-row grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="grid-container grid-container-desktop-lg">
+    <div class="grid-row grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+        {% for prototypes in site.data.anchors %}
+          {% for prototype in prototypes %}
+            {% for example in prototype.anchor_data %}
+              <div class="demo">
+                <h2>{{ example.site_name }}</h2>
+                {% assign filename = prototypes[0] %}
+                {% include component-anchor.html name=filename %}
+                {% include component-anchor-data.html name=filename %}
+              </div>
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>

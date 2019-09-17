@@ -1,4 +1,4 @@
-{% for org in site.data[include.name].anchor_data %}
+{% for org in site.data.anchors.[include.name].anchor_data %}
 <div class="component-anchor">
   <div class="usa-accordion">
     <div class="grid-container">
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="org-expanded" id="org-details{% if include.name %}-{{ include.name }}{% endif %}"hidden>
+      <div class="org-expanded" id="org-details{% if include.name %}-{{ include.name }}{% endif %}" hidden>
         <div class="grid-row grid-gap-2">
           <div class="grid-col-12 tablet:grid-col-6">
             <div class="org-copy">
