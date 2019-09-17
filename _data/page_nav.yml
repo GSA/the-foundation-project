@@ -1,0 +1,35 @@
+data:
+
+  - text: Introduction
+    url: #
+    sub_nav:
+      - text: Who is this guide for
+        url: #
+      - text: Guiding principles
+        url: #
+      - text: About the team
+        url: #
+      - text: How to edit
+        url: #
+      - text: Contact us
+        url: #
+
+  - text: Getting Started
+    url: #
+    sub_nav:
+      - text: Set up communication cadence
+        url: #
+      - text: Working in the open
+        url: #
+      - text: Customer support
+        url: #
+      - text: Validation
+        url: #
+
+  - text: Gather your data
+    url: #
+    sub_nav:
+      - text: Conduct a domain audit
+        url: #
+      - text: Conduct a data call
+        url: #
