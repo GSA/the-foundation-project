@@ -1,7 +1,7 @@
 data:
 
-  - text: Introduction
-    url: #
+  - text: Overview
+    url: /
     sub_nav:
       - text: Who is this guide for
         url: #
