@@ -2,6 +2,8 @@ title: The Foundation Project
 baseurl: ""
 url: ""
 
+include: ["_pages" ]
+
 exclude:
   - assets/js/src
   - Gemfile*
