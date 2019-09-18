@@ -9,11 +9,20 @@ layout: default
       {% include page-nav.html %}
 
       <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-        <h1>{{ page.title }}</h1>
+        <header>
+          <h1>{{ page.title }}</h1>
+          {% if page.deck %}
+          <p class="lead">{{ page.deck }}</p>
+          {% endif %}
+        </header>
 
-        <p class="usa-intro">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
+        <section>
+          <p class="usa-intro">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
 
-        {{ content }}
+          <h2>In this page</h2>
+          {{ content | toc }}
+
+        </section>
 
       </div>
     </div>

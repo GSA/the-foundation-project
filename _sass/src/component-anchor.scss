@@ -10,9 +10,9 @@
     @include u-padding-y(3);
     .org-copy{
       @include u-display('flex');
-      @include u-flex('align-start');
+      @include u-flex('align-center');
       p{
-        @include u-margin-top(0);
+        @include u-margin(0);
       }
       .org-img{
         @include u-margin-right('105');

@@ -1,0 +1,22 @@
+{% for org in site.data.anchors.[include.name].anchor_data %}
+<div class="usa-accordion usa-accordion-text">
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion__heading">
+    <button class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="text-{{ include.name }}">
+      How screen-readers read this
+    </button>
+  </h2>
+  <div id="text-{{ include.name }}" class="usa-accordion__content usa-prose">
+    <div class="code">
+      <p>{{ org.site_name }} is a product of the {{ org.org_primary }}, and managed by {{ org.org_secondary }}
+
+      </p>
+    </div>
+  </div>
+</div>
+
+
+{% endfor %}
