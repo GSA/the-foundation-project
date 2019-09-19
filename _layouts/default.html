@@ -10,8 +10,13 @@
 
   {{ content }}
 
-  {% include component-footer.html %}
-  {% include component-anchor.html name='digitalgov' %}
+  <section>
+    {% include component-footer.html %}
+    <div>
+      {% include component-anchor.html name='digitalgov' %}
+    </div>
+  </section>
+
 
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
