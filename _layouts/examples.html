@@ -20,13 +20,15 @@ layout: default
         {% for prototypes in site.data.anchors %}
           {% for prototype in prototypes %}
             {% for example in prototype.anchor_data %}
+              {% assign filename = prototypes[0] %}
+              {% if filename != 'digitalgov' %}
               <div class="demo">
                 <h2>{{ example.site_name }}</h2>
-                {% assign filename = prototypes[0] %}
                 {% include component-anchor.html name=filename %}
                 {% include component-anchor-text.html name=filename %}
                 {% include component-anchor-data.html name=filename %}
               </div>
+              {% endif %}
             {% endfor %}
           {% endfor %}
         {% endfor %}
