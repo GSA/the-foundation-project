@@ -9,7 +9,8 @@
   }
 }
 
-.usa-accordion-data{
+.usa-accordion-data,
+.usa-accordion-text{
   @include u-margin-top(4);
   button{
     @include u-bg('mint-20');

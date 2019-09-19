@@ -60,8 +60,11 @@
   }
 
   .org-expanded{
-    @include u-margin-bottom(2);
+    .org-copy{
+      @include u-margin-bottom(2);
+    }
     .org-links{
+      @include u-margin-bottom(2);
       @include u-padding-x(2);
       @include u-padding-right(1);
       @include u-padding-top('105');
