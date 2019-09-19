@@ -2,23 +2,17 @@
 <div class="component-anchor">
   <div class="usa-accordion">
     <div class="grid-container">
-      <div class="org-short">
-        <div class="grid-row grid-gap-2">
-          <div class="grid-col-12 tablet:grid-col-8">
-
+      <div class="grid-row grid-gap-4">
+        <div class="grid-col-12">
+          <div class="org-short">
             <div class="org-copy">
-              <img class="org-img" src="{{ org.agency_logo | relative_url }}" alt="">
-              <p><a href="#" title="{{ org.site_name }}">{{ org.site_name }}</a> is a product of the <a href="{{ org.org_primary_url }}" title="{{ org.org_primary }}">{{ org.org_primary }}</a>{% if org.org_primary %}, and managed by <a href="{{ org.org_secondary_url }}" title="{{ org.org_secondary }}">{{ org.org_secondary }}</a>{% endif %}</p>
+              <a href="{{ org.agency_url }}" title="{{ org.agency }}"><img class="org-img" src="{{ org.agency_logo | relative_url }}" alt="{{ org.agency }} Logo"></a>
+              <p><a href="#" title="{{ org.site_name }}">{{ org.site_name }}</a> is a product of the <a href="{{ org.org_primary_url }}" title="{{ org.org_primary }}">{{ org.org_primary }}</a>{% if org.org_primary %}, and managed by <a href="{{ org.org_secondary_url }}" title="{{ org.org_secondary }}">{{ org.org_secondary }}</a>{% endif %}.</p>
             </div>
 
-          </div>
-
-          <div class="grid-col-12 tablet:grid-col-3 tablet:grid-offset-1">
-
-            <button class="btn-learn-more usa-button usa-button--outline usa-button--inverse usa-accordion__button" aria-hidden="true" aria-expanded="false" aria-controls="org-details{% if include.name %}-{{ include.name }}{% endif %}">
+            <button class="btn-learn-more usa-button usa-button--outline usa-button--inverse usa-accordion__button" aria-hidden="false" aria-expanded="false" aria-controls="org-details{% if include.name %}-{{ include.name }}{% endif %}">
               <span>Learn&nbsp;more</span>
             </button>
-
           </div>
         </div>
       </div>
@@ -49,18 +43,19 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="component-anchor-support">
-    <div class="grid-container">
-      <div class="grid-row grid-gap-2">
-        <div class="grid-col-12 tablet:grid-col-8">
-          <p><i class="fas fa-comment fa-flip-horizontal"></i> Have a question about government services? <a class="usa-button usa-button-sm" href="#">Contact USA.gov</a></p>
-        </div>
-        <div class="grid-col-12 tablet:grid-col-3 tablet:grid-offset-1">
-
+<div class="component-anchor-support">
+  <div class="grid-container">
+    <div class="grid-row grid-gap-2">
+      <div class="grid-col-12">
+        <div class="usagov">
+          <p><i class="fas fa-comment fa-flip-horizontal"></i> <span>Have a question about government services?</span></p>
+          <a class="usa-button usa-button-sm" href="#">Contact USA.gov</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 {% endfor %}

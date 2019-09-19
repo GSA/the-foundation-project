@@ -8,9 +8,9 @@ anchor_data:
     agency_logo: /assets/img/gsa-logo.png
     agency_url: https://gsa.gov
     agency_about: https://gsa.gov/about
-    org_primary: Technology Transformation Services
-    org_primary_acronym: TTS
-    org_primary_url: https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services
+    org_primary: Office of Government-wide Policy
+    org_primary_acronym: OGP
+    org_primary_url: https://www.gsa.gov/about-us/organization/office-of-governmentwide-policy-overview
     org_primary_email: tts-info@gsa.gov
     org_primary_about: https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services
     org_primary_bio: "As part of GSA’s Technology Transformation Services (TTS), we apply modern methodologies and technologies to improve the public’s experience with government. We help agencies make their services more accessible, efficient, and effective with modern applications, platforms, processes, personnel, and software solutions."
